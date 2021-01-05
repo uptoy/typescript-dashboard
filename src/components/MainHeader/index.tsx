@@ -1,10 +1,16 @@
 import React from 'react'
-import { Container } from './styles'
+import { Container,Profile,Welcome,UserName } from './styles'
 
-const Aside:React.FC = () => {
+const MainHeader:React.FC = () => {
     return (
-        <h1>aside</h1>
+        <Container>
+            <h1>toggle</h1>
+            <Profile>
+                <Welcome>welcome</Welcome>
+                <UserName>username</UserName>
+            </Profile>
+        </Container>
     )
 }
 
-export default Aside
+export default MainHeader
