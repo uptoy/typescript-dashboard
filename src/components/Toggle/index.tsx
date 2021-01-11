@@ -1,11 +1,10 @@
 import React from 'react'
-
-import {Container,ToggleLabel} from './styles'
+import {Container,ToggleLabel,ToggleSelector} from './styles'
 
 const Toggle:React.FC = () => (
     <Container>
         <ToggleLabel>Light</ToggleLabel>
-        <Switch
+        <ToggleSelector
             checked
             uncheckedIcon={false}
             checkedIcon={false}
