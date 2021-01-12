@@ -20,4 +20,4 @@ html,body,#root {
 button{
     cursor:pointer
 }
-`
+`;

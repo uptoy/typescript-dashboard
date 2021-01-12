@@ -1,17 +1,30 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-// MH = MainHeader
-// AS = Aside
-// CT = Content
+/**
+* Layout
+* MH = Main Header
+* AS = Aside
+* CT = Content    
+*/
 
 export const Grid = styled.div`
-    display:grid;
-    grid-template-columns : 250px auto;
-    grid-template-rows : 70px auto;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 70px auto;
 
-    grid-template-area :
+    grid-template-areas:
     'AS MH'
-    'AS CT'
+    'AS CT';
 
-    height:100vh
-`
+    height: 100vh;
+    min-width: 315px;
+
+    @media(max-width: 600px){
+        grid-template-columns: 100%;
+        grid-template-rows: 70px auto;
+
+        grid-template-areas:
+        'MH'
+        'CT';
+    }
+`;

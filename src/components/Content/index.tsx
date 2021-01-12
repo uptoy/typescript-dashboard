@@ -1,10 +1,11 @@
-import React from 'react'
-import { Container } from './styles'
+import React from 'react';
 
-const Aside:React.FC = () => {
-    return (
-        <h1>aside</h1>
-    )
-}
+import { Container }  from './styles';
 
-export default Aside
+const Content: React.FC = ({ children }) => (
+    <Container>
+        {children}
+    </Container>
+);
+
+export default Content;
